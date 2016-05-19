@@ -86,12 +86,16 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>今天准备好了博客，可以把每天学到的东西总结起来，晚起的鸟儿不是没有虫吃！<br>今天是17号，但是写在了16号的博客里，原因是拖沓、拖延症。那么今天是否能完成昨天就该完成的事情呢？我对自己拭目以待。</p>
+        <p>#levelDB</p>
+<p>##port目录</p>
+<p>###port.h 平台不同，include的文件也不同</p>
+<p>###atomic_pointer.h 支持原子操作的指针</p>
+<p>###port<em>各种平台<br>class AtomicPointer{<br>    private:<br>        void* rep</em>;<br>    public:<br>        AtomicPointer(){}<br>        explicit AtomicPointer(void <em>p):rep_(p){}<br>        inline void</em> NoBarrier<em>Load() const {return rep</em>;}<br>        inline void<em> NoBarrier_Store(void</em> v){rep_=v;}<br>        inline void<em> Acquire_Load() const{<br>            void</em> result=rep_;<br>            MemoryBarrier();<br>            return result;<br>        }<br>        inline void Release<em>Store(void* v){<br>            MemoryBarrier();<br>            rep</em>=v;<br>        }<br>};</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/05/16/c-learning/" data-id="cioazwsm70000zgi1h0zlte4o" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/05/16/c-learning/" data-id="cioecsb2v0000u7i1jres4osp" class="article-share-link">Share</a>
       
       
     </footer>
@@ -136,7 +140,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/05/16/hello-world/" data-id="cioazwsmc0001zgi1rd5hod1j" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/05/16/hello-world/" data-id="cioecsb320001u7i19kh6a3zt" class="article-share-link">Share</a>
       
       
     </footer>

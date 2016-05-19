@@ -5,16 +5,28 @@
   
   <title>c++ learning | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="今天准备好了博客，可以把每天学到的东西总结起来，晚起的鸟儿不是没有虫吃！今天是17号，但是写在了16号的博客里，原因是拖沓、拖延症。那么今天是否能完成昨天就该完成的事情呢？我对自己拭目以待。">
+  <meta name="description" content="#levelDB
+##port目录
+###port.h 平台不同，include的文件也不同
+###atomic_pointer.h 支持原子操作的指针
+###port各种平台class AtomicPointer{    private:        void* rep;    public:        AtomicPointer(){}        explicit AtomicPoi">
 <meta property="og:type" content="article">
 <meta property="og:title" content="c++ learning">
 <meta property="og:url" content="http://yoursite.com/2016/05/16/c-learning/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="今天准备好了博客，可以把每天学到的东西总结起来，晚起的鸟儿不是没有虫吃！今天是17号，但是写在了16号的博客里，原因是拖沓、拖延症。那么今天是否能完成昨天就该完成的事情呢？我对自己拭目以待。">
-<meta property="og:updated_time" content="2016-05-17T05:24:46.000Z">
+<meta property="og:description" content="#levelDB
+##port目录
+###port.h 平台不同，include的文件也不同
+###atomic_pointer.h 支持原子操作的指针
+###port各种平台class AtomicPointer{    private:        void* rep;    public:        AtomicPointer(){}        explicit AtomicPoi">
+<meta property="og:updated_time" content="2016-05-19T13:47:45.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="c++ learning">
-<meta name="twitter:description" content="今天准备好了博客，可以把每天学到的东西总结起来，晚起的鸟儿不是没有虫吃！今天是17号，但是写在了16号的博客里，原因是拖沓、拖延症。那么今天是否能完成昨天就该完成的事情呢？我对自己拭目以待。">
+<meta name="twitter:description" content="#levelDB
+##port目录
+###port.h 平台不同，include的文件也不同
+###atomic_pointer.h 支持原子操作的指针
+###port各种平台class AtomicPointer{    private:        void* rep;    public:        AtomicPointer(){}        explicit AtomicPoi">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -85,12 +97,16 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>今天准备好了博客，可以把每天学到的东西总结起来，晚起的鸟儿不是没有虫吃！<br>今天是17号，但是写在了16号的博客里，原因是拖沓、拖延症。那么今天是否能完成昨天就该完成的事情呢？我对自己拭目以待。</p>
+        <p>#levelDB</p>
+<p>##port目录</p>
+<p>###port.h 平台不同，include的文件也不同</p>
+<p>###atomic_pointer.h 支持原子操作的指针</p>
+<p>###port<em>各种平台<br>class AtomicPointer{<br>    private:<br>        void* rep</em>;<br>    public:<br>        AtomicPointer(){}<br>        explicit AtomicPointer(void <em>p):rep_(p){}<br>        inline void</em> NoBarrier<em>Load() const {return rep</em>;}<br>        inline void<em> NoBarrier_Store(void</em> v){rep_=v;}<br>        inline void<em> Acquire_Load() const{<br>            void</em> result=rep_;<br>            MemoryBarrier();<br>            return result;<br>        }<br>        inline void Release<em>Store(void* v){<br>            MemoryBarrier();<br>            rep</em>=v;<br>        }<br>};</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/05/16/c-learning/" data-id="cioazwsm70000zgi1h0zlte4o" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/05/16/c-learning/" data-id="cioecsb2v0000u7i1jres4osp" class="article-share-link">Share</a>
       
       
     </footer>
